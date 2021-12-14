@@ -1,0 +1,15 @@
+# family_boco file written by ICEM CFD by adamc on Tue Dec 14 16:23:36 RTZ 2 (зима) 2021
+## solver Ansys Fluent
+"POINTS"
+"CURVES"
+"HUB"
+"PLATE1"
+"PLATE2"
+"SHELL"
+"LIVE"
+"TOP"
+"BOTTOM"
+"PERIODIC1"
+"PERIODIC2"
+"SHROUD"
+
