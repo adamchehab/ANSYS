@@ -1,4 +1,4 @@
-# Written by ICEM CFD 21.2, user adamc, Tue Dec 14 16:45:42 RTZ 2 (зима) 2021
+# Written by ICEM CFD 21.2, user adamc, Tue Dec 14 16:54:07 RTZ 2 (зима) 2021
 
 begin family POINTS
     begin solver "Ansys Fluent"
