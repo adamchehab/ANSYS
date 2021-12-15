@@ -1,5 +1,5 @@
 # ICEM CFD Project Settings
-# Saved by adamc on PC16 on Wed Dec 15 16:16:26 RTZ 2 (зима) 2021
+# Saved by adamc on PC16 on Wed Dec 15 16:30:56 RTZ 2 (зима) 2021
 # ICEM CFD - version 21.2 - Release date: May 17 2021
 
 array set file_name {
@@ -191,43 +191,43 @@ array set prism_values {
 }
 set aie_current_flavor {}
 array set vid_options {
-    wb_import_tritol 0.001
-    wb_import_mix_res_line 0
-    wb_import_cad_att_pre {SDFEA;DDM}
-    wb_import_surface_bodies 1
-    wb_NS_to_subset 0
     wb_import_mat_points 0
+    wb_NS_to_subset 0
+    wb_import_surface_bodies 1
+    wb_import_cad_att_pre {SDFEA;DDM}
+    wb_import_mix_res_line 0
+    wb_import_tritol 0.001
     auxiliary 0
-    wb_import_mix_res_surface 0
-    wb_import_mix_res -1
     wb_import_cad_att_trans 1
+    wb_import_mix_res -1
+    wb_import_mix_res_surface 0
     show_name 0
-    wb_import_delete_solids 0
     wb_import_solid_bodies 1
-    wb_import_save_pmdb {}
+    wb_import_delete_solids 0
     wb_import_mix_res_solid 0
+    wb_import_save_pmdb {}
     inherit 1
     default_part GEOM
     new_srf_topo 1
     wb_import_associativity_model_name {}
     DelPerFlag 0
-    wb_import_save_partfile 0
     wb_import_line_bodies 0
+    wb_import_save_partfile 0
     composite_tolerance 1.0
-    wb_import_en_sym_proc 1
     wb_NS_to_entity_parts 0
-    wb_import_reference_key 0
-    wb_import_work_points 0
+    wb_import_en_sym_proc 1
     wb_import_sel_proc 0
-    wb_NS_only 0
-    wb_import_pluginname {}
+    wb_import_work_points 0
+    wb_import_reference_key 0
     wb_import_mix_res_point 0
-    wb_import_refresh_pmdb 0
+    wb_import_pluginname {}
+    wb_NS_only 0
     wb_import_create_solids 0
-    wb_import_load_pmdb {}
-    wb_import_scale_geo Default
-    wb_import_sel_pre {}
+    wb_import_refresh_pmdb 0
     wb_import_lcs 0
+    wb_import_sel_pre {}
+    wb_import_scale_geo Default
+    wb_import_load_pmdb {}
     replace 0
     wb_import_cad_associativity 0
     same_pnt_tol 1e-4
@@ -235,8 +235,8 @@ array set vid_options {
     vid_mode 0
     DelBlkPerFlag 0
 }
-set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 2 geomCurveNode 2 geomSurfNode 0 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 2 block_edgeNode 0 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
-set last_view {rot {0.858455144613 0.262509597349 -0.0988561877296 -0.429384361768} scale {80.2856681417 80.2856681417 80.2856681417} center {18.586718559299999 0.0140237808228 7.5000002384200002} pos {-94.0564416097 113.362411457 0}}
+set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 0 geomCurveNode 2 geomSurfNode 0 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 0 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
+set last_view {rot {0.195053608136 0.525055716986 0.791210941144 0.245470630891} scale {113.739801375 113.739801375 113.739801375} center {18.5917 0.0 7.5} pos {-48.2495000391 -225.462477126 0}}
 array set cut_info {
     active 0
 }
@@ -282,58 +282,10 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         first_layer_smoothing_steps 1
         loadmesh 0
     }
-    array set splitBlkDEZ_data {
-        this splitBlkDEZ
-        type DEZ
-        splitBlkVal 0
-        splitBlkBlkSelVal 0
-        markedBlock {}
-        splitBlkEdge {}
-        copy_from_parallel 0
-        project 0
-        move_ogrid_nodes 0
-        nearest_node_split 0
-        splitBlkEdgeMethodVal 1
-        splitPoint {}
-        splitPar 0.5
-        splitDist {}
-        splitCurve {}
-        splitCurvePar {}
-        around 0
-        offset 1
-        absolute 0
-        link_shape 0
-        splitExtendGGVal 0
-        splitBlkBlkSel2Val 0
-        markedBlock2 {}
-        ExtendEdge {}
-        SelectionMethodVal 0
-        splitFace {}
-        splitFaceEdge {}
-        splitVerts {}
-        sblock {}
-        iface {}
-        ImprintUnsBlkMethodVal 0
-        ImprintUnsBlkEGVal 0
-        vecImprintList {}
-        SplitUnsBlk3dFMVal 0
-        ublock {}
-        splitSheets1 {}
-        iFace {}
-        edgesProj {}
-        SplitUnsBlk3dMethodVal 0
-        SplitUnsBlk3dEGVal 0
-        split_along {}
-        SplitUnsBlk3dOutputVal 0
-        uFace1 {}
-        uFace2 {}
-        splitSheets2 {}
-        splitSheets {}
-    }
     array set editProjDEZ_data {
         this editProjDEZ
         type DEZ
-        editAssocEGVal 0
+        editAssocEGVal 1
         assocVertEGVal 1
         verts {}
         part_name {}
@@ -428,11 +380,6 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         center {}
         angle {}
         moveVertsGGVal 0
-    }
-    array set deleteBlockDEZ_data {
-        this deleteBlockDEZ
-        type DEZ
-        delBlocks {}
     }
     array set hexMeshOptsDEZ_data {
         this hexMeshOptsDEZ
