@@ -1,5 +1,5 @@
 # ICEM CFD Project Settings
-# Saved by adamc on PC16 on Tue Dec 14 16:54:07 RTZ 2 (зима) 2021
+# Saved by adamc on PC16 on Wed Dec 15 15:34:38 RTZ 2 (зима) 2021
 # ICEM CFD - version 21.2 - Release date: May 17 2021
 
 array set file_name {
@@ -235,8 +235,8 @@ array set vid_options {
     vid_mode 0
     DelBlkPerFlag 0
 }
-set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 2 geomCurveNode 2 geomSurfNode 2 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 2 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
-set last_view {rot {0 0 0 1} scale {79.5625 79.5625 79.5625} center {18.5917 0.0 7.5} pos {0 0 0}}
+set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 2 geomCurveNode 2 geomSurfNode 2 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 2 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 1 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
+set last_view {rot {-0.101838286249 0.241344675646 -0.0734014624127 0.962285787239} scale {65.270826524 65.270826524 65.270826524} center {18.56885 0.0 7.5} pos {-86.6571707667 -4.53468404975 0}}
 array set cut_info {
     active 0
 }
