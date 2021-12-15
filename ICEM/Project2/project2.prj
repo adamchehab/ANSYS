@@ -1,5 +1,5 @@
 # ICEM CFD Project Settings
-# Saved by adamc on PC16 on Wed Dec 15 15:34:38 RTZ 2 (зима) 2021
+# Saved by adamc on PC16 on Wed Dec 15 15:41:55 RTZ 2 (зима) 2021
 # ICEM CFD - version 21.2 - Release date: May 17 2021
 
 array set file_name {
@@ -236,7 +236,7 @@ array set vid_options {
     DelBlkPerFlag 0
 }
 set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 2 geomCurveNode 2 geomSurfNode 2 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 2 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 1 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
-set last_view {rot {-0.101838286249 0.241344675646 -0.0734014624127 0.962285787239} scale {65.270826524 65.270826524 65.270826524} center {18.56885 0.0 7.5} pos {-86.6571707667 -4.53468404975 0}}
+set last_view {rot {-0.162548254015 0.13668747595 -0.0461737217656 0.976095582648} scale {53.46498692 53.46498692 53.46498692} center {18.56885 0.0 7.5} pos {-14.3467352702 -69.8633949613 0}}
 array set cut_info {
     active 0
 }
@@ -281,6 +281,61 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         smoothing_steps 12
         first_layer_smoothing_steps 1
         loadmesh 0
+    }
+    array set moveBVertexDEZ_data {
+        this moveBVertexDEZ
+        type DEZ
+        moveBVertexmainVal 1
+        MoveVertexOptions {Single Multiple}
+        MVHow Single
+        __MVtype_Last_Index 0
+        moveVerts {}
+        mv_fixx 0
+        mv_fixy 0
+        mv_fixz 0
+        moveVertsDirGGVal 0
+        dirEdge {}
+        mv_normal 0
+        mv_depend 0
+        SetPostitionOptions {"Set Position" "Increment Position"}
+        SLHow {Set Position}
+        __SLtype_Last_Index 0
+        refLocTypeVal 0
+        ref_vertex {}
+        ref_point {}
+        SetLocCsysVal 0
+        SetLocBVertexXVal 0
+        X {}
+        SetLocBVertexYVal 0
+        Y {}
+        SetLocBVertexZVal 1
+        Z 5
+        SetLocBVertexNVal 0
+        Normal {}
+        SetLocCylRVal 0
+        SetLocCylTVal 0
+        SetLocCylZVal 0
+        vertices {{  122  } {  195  } {  123  } {  136  } {  262  } {  47  } {  48  } {  11  } {  33  } {  99  } {  100  } {  13  } {  34  } {  165  } {  149  } {  150  } {  45  } {  46  } {  19  } {  111  } {  21  } {  35  } {  180  } {  210  } {  211  } {  67  } {  68  } {  65  } {  66  } {  89  } {  90  } {  245  } {  228  }}
+        edge {}
+        vertex {}
+        AlignVertCsysVal 0
+        AlignVertexGGVal 0
+        AlignVertexPlaneMethod 1
+        Plane {}
+        AlignVertCylParVal 0
+        alignDir {}
+        vertList {}
+        edgeList {}
+        length {}
+        edgeLenGGVal 0
+        moveFacesEGVal 0
+        faceList {}
+        moveFaceGGVal 0
+        vector {}
+        vecList {}
+        center {}
+        angle {}
+        moveVertsGGVal 0
     }
     array set hexMeshOptsDEZ_data {
         this hexMeshOptsDEZ
