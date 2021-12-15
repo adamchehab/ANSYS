@@ -1,5 +1,5 @@
 # ICEM CFD Project Settings
-# Saved by adamc on PC16 on Wed Dec 15 16:44:00 RTZ 2 (зима) 2021
+# Saved by adamc on PC16 on Wed Dec 15 16:48:49 RTZ 2 (зима) 2021
 # ICEM CFD - version 21.2 - Release date: May 17 2021
 
 array set file_name {
@@ -236,13 +236,13 @@ array set vid_options {
     vid_mode 0
     DelBlkPerFlag 0
 }
-set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 0 geomCurveNode 0 geomSurfNode 0 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 2 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
-set last_view {rot {0.341638569545 -0.677311316716 0.578002092369 -0.300742496617} scale {66.853310702 66.853310702 66.853310702} center {18.5917 0.0 7.5} pos {-162.809920324 -38.1954909337 0}}
+set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 0 geomCurveNode 0 geomSurfNode 0 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 0 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
+set last_view {rot {0.313711391672 -0.817865711171 0.453356663702 -0.164768251588} scale {43.0002511994 43.0002511994 43.0002511994} center {18.5917 0.0 7.5} pos {7.84510902472 -45.4727637916 0}}
 array set cut_info {
     active 0
 }
 array set hex_option {
-    default_bunching_ratio 2.0
+    default_bunching_ratio 2
     floating_grid 0
     project_to_topo 0
     n_tetra_smoothing_steps 20
@@ -255,8 +255,8 @@ array set hex_option {
     hexa_verbose_mode 0
     old_eparams 0
     uns_face_mesh_method uniform_quad
-    multigrid_level 0
-    uns_face_mesh one_tri
+    multigrid_level 2
+    uns_face_mesh several_tris
     check_blck 0
     proj_limit 0
     check_inv 0
@@ -272,6 +272,36 @@ array set saved_views {
 #------------- DEZ Data ------------------
 
 namespace eval ::AIEnv::GUIManagement::DEZ {
+    array set mszSurfDEZ_data {
+        this mszSurfDEZ
+        type DEZ
+        surfList {}
+        emax 0.4
+        ehgt 0.4
+        hrat 1.2
+        nlay 0
+        ewid 0
+        erat 0
+        emin {}
+        edev 0
+        prism_height_limit 0
+        PrismLawList {undefined linear exponential wb-exponential}
+        prism_law undefined
+        __mszSurfPrismLaw_Last_Index 0
+        surfElemTypeList {
+        "All Tri"
+        "Quad w/one Tri"
+        "Quad Dominant"
+        "All Quad"
+        "NONE"
+    }
+        etyp2 NONE
+        __mszSurfType_Last_Index 0
+        surfElemMethodList {Autoblock {Patch Dependent} {Patch Independent} Delaunay NONE}
+        emethod2 NONE
+        __mszSurfMethod_Last_Index 0
+        remeshSurfFlag 0
+    }
     array set mszGlobalDEZ_data {
         this mszGlobalDEZ
         type rot
@@ -430,6 +460,50 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         first_layer_smoothing_steps 1
         loadmesh 0
     }
+    array set meshAutoDEZ_data {
+        this meshAutoDEZ
+        type DEZ
+        meshAutoWhatVal 1
+        set_surfparams_type 0
+        etype2 {}
+        __meshSurfType_Last_Index 0
+        set_surfparams_method 0
+        emethod2 {}
+        __meshSurfMethod_Last_Index 0
+        geomParts {}
+        geomEnts {}
+        volmesh_type 0
+        tetra_method 0
+        run_prism 0
+        run_hexacore 0
+        tetra_input 0
+        meshTetUseExistVal 0
+        useMeshParts {}
+        meshTetUseExist2Val 0
+        tetinFile {}
+        loadFlag 1
+        PartList {{From screen} BOTTOM CURVES HUB LIVE PERIODIC1 PERIODIC2 PLATE1 PLATE2 POINTS SHELL SHROUD TOP VORFN inherited}
+        family {}
+        __meshDelRemeshMF_Last_Index 0
+        loadmesh 1
+        enclosedParts {}
+        meshFile {}
+        __meshAdvRemeshMF_Last_Index 0
+        run_inflation 0
+        run_pre_or_post_inflation {}
+        run_tgrid_hexacore 0
+        run_tgrid_interactive 0
+        __meshTGridRemeshMF_Last_Index 0
+        frozenMeshVolParts {}
+        run_tgrid_inflation 0
+        __meshHexaDomPart_Last_Index 0
+        vol_fam {}
+        __meshCartBodyFit_Last_Index 0
+        gridFile {}
+        kpt_tol {}
+        prism_input 0
+        __meshPrismTGridRemeshMF_Last_Index 0
+    }
     array set editBlockMenuDEZ_data {
         this editBlockMenuDEZ
         type DEZ
@@ -571,16 +645,93 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         angle {}
         moveVertsGGVal 0
     }
+    array set mParamsDEZ_data {
+        this mParamsDEZ
+        type DEZ
+        blockParamVal 0
+        blockParamSelVal 0
+        reset_edge_bunch 0
+        check_blck 0
+        factor 1
+        scale_spacings 0
+        edge {}
+        length {}
+        n 0
+        eparamMeshLawVal 0
+        curves {}
+        h1 {}
+        h1act {}
+        link_sp1 0
+        r1 {}
+        r1act {}
+        h2 {}
+        h2act {}
+        link_sp2 0
+        r2 {}
+        r2act {}
+        lmax {}
+        lmaxact {}
+        eparam_rel 0
+        lockNodes 0
+        lockParams 0
+        copyFlag 0
+        eparamCopyVal 0
+        copyEdge {}
+        absolute 0
+        linkFlag 0
+        linkEdge {}
+        hlDependent 0
+        hlAttached 0
+        hlMaster 0
+        matchEdgeVal 0
+        ref_edge {}
+        target_edges {}
+        link_edge 0
+        verts {}
+        SpacingTypes {Minimum Maximum Average}
+        spacing Minimum
+        __matchEdgeAutoSpacing_Last_Index 0
+        matchEdgesDimGGVal 0
+        refEdges {}
+        ref_edge2 {}
+        edgeParamsCopyTo2Val 0
+        to_edge {}
+        copy_no_nodes 0
+        copy_absolute 0
+        blocks {}
+        edgeRefDimGGVal 0
+        ref_dim {}
+    }
+    array set checkBlockDEZ_data {
+        this checkBlockDEZ
+        type DEZ
+        blockCheckVal 1
+        check_unstruct 0
+        Blocks {}
+    }
+    array set hexQualityDEZ_data {
+        this hexQualityDEZ
+        type DEZ
+        qualityDDList {Angle {Aspect ratio} {Constant Radius} {Custom quality} {Determinant 2x2x2} {Determinant 3x3x3} Distortion {Equiangle Skewness} {Eriksson Skewness} Ford {Hex. Face Aspect Ratio} {Hex. Face Distortion} {Max angle} {Max dihedral angle} {Max length} {Max ortho} {Max ortho 4.3v} {Max ratio} {Max sector volume} {Max side} {Max warp} {Max warp 4.3v} {Mid node} {Mid node Angle} {Min angle} {Min ortho} {Min sector volume} {Min side} {Opp. Face Area Ratio} {Opp. Face Parallelism} Orientation Quality Taper Volume {Volume change} Warpage {X size} {Y size} {Z size}}
+        qualitydde {Determinant 3x3x3}
+        __hexQualityDDE_Last_Index 5
+        minv 0
+        maxv 1
+        ylim 20
+        nbars 20
+        onlyVisible 0
+        activePartsOnly 0
+    }
     array set hexMeshOptsDEZ_data {
         this hexMeshOptsDEZ
-        type DEZ
-        mgLevel 0
+        type several_tris
+        mgLevel 2
         displayLevel 0
         projLimit 0
         lawList {Uniform Hyperbolic BiGeometric Poisson}
         meshLaw BiGeometric
         __hexMeshOptsMLaw_Last_Index 0
-        ratio 2.0
+        ratio 2
         find_worst 1-3
         smoothOgrid 0
         floatGrid 0
@@ -594,7 +745,7 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         trfDeg 1
         refTopo {}
         unsTypeList {{Tri (STL like)} {All Tri} {All Quad} {Quad Dominant} {Quad w/one Tri}}
-        unsType {Quad w/one Tri}
+        unsType {Quad Dominant}
         __hexMeshOptsUns_Last_Index 0
         unsMethodList {{ICEM CFD Quad} {Gambit Pave} Auto}
         unsMethod {ICEM CFD Quad}
