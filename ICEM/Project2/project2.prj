@@ -1,5 +1,5 @@
 # ICEM CFD Project Settings
-# Saved by adamc on PC16 on Wed Dec 15 16:36:24 RTZ 2 (зима) 2021
+# Saved by adamc on PC16 on Wed Dec 15 16:44:00 RTZ 2 (зима) 2021
 # ICEM CFD - version 21.2 - Release date: May 17 2021
 
 array set file_name {
@@ -149,8 +149,8 @@ array set prism_values {
     min_smoothing_steps 6
     first_layer_smoothing_steps 1
     new_volume {}
-    height {}
-    prism_height_limit {}
+    height 0
+    prism_height_limit 0
     interpolate_heights 0
     n_tetra_smoothing_steps 10
     do_checks {}
@@ -159,7 +159,7 @@ array set prism_values {
     max_aspect_ratio {}
     ratio_max {}
     incremental_write 0
-    total_height {}
+    total_height 0
     use_prism_v10 0
     intermediate_write 1
     delete_base_triangles {}
@@ -182,6 +182,7 @@ array set prism_values {
     law exponential
     min_smoothing_val 0.1
     auto_reduction 0
+    max_prism_height_ratio 0
     stop_columns 1
     stair_step 1
     smoothing_steps 12
@@ -235,8 +236,8 @@ array set vid_options {
     vid_mode 0
     DelBlkPerFlag 0
 }
-set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 0 geomCurveNode 0 geomSurfNode 0 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 0 block_edgeNode 2 block_faceNode 2 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
-set last_view {rot {0.212942580388 0.0748359105058 0.106410088403 0.968365600925} scale {234.319618236 234.319618236 234.319618236} center {18.5917 0.0 7.5} pos {657.23602091 -81.1771157065 0}}
+set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 0 geomCurveNode 0 geomSurfNode 0 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 2 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-BOTTOM 2 part-CURVES 2 part-HUB 2 part-LIVE 2 part-PERIODIC1 2 part-PERIODIC2 2 part-PLATE1 2 part-PLATE2 2 part-POINTS 2 part-SHELL 2 part-SHROUD 2 part-TOP 2 part-VORFN 0}
+set last_view {rot {0.341638569545 -0.677311316716 0.578002092369 -0.300742496617} scale {66.853310702 66.853310702 66.853310702} center {18.5917 0.0 7.5} pos {-162.809920324 -38.1954909337 0}}
 array set cut_info {
     active 0
 }
@@ -271,6 +272,153 @@ array set saved_views {
 #------------- DEZ Data ------------------
 
 namespace eval ::AIEnv::GUIManagement::DEZ {
+    array set mszGlobalDEZ_data {
+        this mszGlobalDEZ
+        type rot
+        mszGlobalTypeGGVal 4
+        globalSF 200.0
+        dspScaleFlag 0
+        maxSz 2048.0
+        dspSeedFlag 0
+        natSzGGVal 0
+        minSize 1.0
+        dspNatFlag 0
+        gapNum 1
+        gnatref 10
+        igwall 0
+        meshElemTypeList {
+       "All Tri"
+       "Quad w/one Tri"
+       "Quad Dominant"
+       "All Quad"
+    }
+        mesh_type2 {Quad Dominant}
+        __mszShellType_Last_Index 0
+        meshElemMethodList {Autoblock {Patch Dependent} {Patch Independent} Shrinkwrap}
+        mesh_method2 {Patch Dependent}
+        __mszShellMethod_Last_Index 0
+        mszShellAdvancedVal 1
+        ign_size 0.006
+        mappedMethodsList {
+        "Free"
+        "Some mapped"
+        "Mostly mapped"
+    }
+        mapped_method2 {Some mapped}
+        __mszShellMapped_Last_Index 0
+        merge_surfs 1
+        bunch_respect 0
+        quadratic 0
+        protect_line 0
+        bound_smooth 0
+        free_bunch 0
+        OffsetList {
+        "Standard"
+        "Simple"
+        "Forced simple"
+    }
+        simple_offset2 Standard
+        __mszShellSimpleOffset_Last_Index 0
+        block_mapping 0.2
+        adjust_nodes_max 0
+        proj_surf 1
+        surf_sizes 0
+        snorm 1
+        try_harder 1
+        impr_level 1
+        mesh_dormant 0
+        smooth_dormant 0
+        shrinkwrap_nsmooth 5
+        shrinkwrap_projfactor 0.1
+        mszGlobalVolumeTypeEGVal 0
+        mszGlobalTetTypeVal 0
+        tetra_batch 0
+        fastTranFlag 0
+        gedgec 0.2
+        tetra_smooth 1
+        tetra_smooth_niter 5
+        tetra_smooth_aspect 0.4
+        tetra_coarsen 0
+        tetra_coarsen_niter 2
+        tetra_coarsen_aspect 0.2
+        tetra_fix_nmanifold 1
+        tetra_close_gaps 0
+        tetra_fix_holes 1
+        tetra_use_active_lcs 0
+        tetra_run_adv_delaunay 1
+        tetra_tg_adv_delaunay_af 1
+        tetra_memory_scale 1
+        tetra_spacing_factor 1
+        tetra_fillholes 0
+        tetra_meshall 0
+        tetra_floodfill 0
+        tetra_verbose 0
+        tetra_smooth2 1
+        tetra_smooth_niter2 5
+        tetra_smooth_aspect2 0.4
+        tetra_expansion_factor 1.2
+        tetra_proximity_check 0
+        hybrid_remeshCenter 0
+        mszGlobalMeshCartEGVal 0
+        cart_proj_factor 0.98
+        cart_split_degen 0
+        cart_create_pyramids 0
+        cartRefType {"Uniform" "2-to-1" "3-to-1"}
+        cart_tratio Uniform
+        __meshCartTratio_Last_Index 0
+        cart_aspect_ratio {1 1 1}
+        cart_infproj 1
+        cart_user_bbox 0
+        cart_bbox {}
+        cart_csys 0
+        cart_fillholes 0
+        __meshCartHCTratio_Last_Index 0
+        GrowthLawList {linear exponential wb-exponential}
+        law exponential
+        __meshPrismLaw_Last_Index 0
+        height 0
+        ratio 1.2
+        layers 3
+        total_height 0
+        init_dir_from_prev 0
+        min_prism_quality 0.0099999998
+        fillet 0.1
+        max_prism_angle 180
+        max_aspect_ratio {}
+        prism_height_limit 0
+        ratio_multiplier {}
+        new_volume {}
+        side_family {}
+        top_family {}
+        into_orphan 0
+        n_triangle_smoothing_steps 5
+        TriQualityList {inscribed_area inscribed_ratio laplace height_over_base skewness min_angle max_angle}
+        triangle_quality inscribed_area
+        __meshPrismTriQuality1_Last_Index 0
+        ortho_weight 0.50
+        n_tetra_smoothing_steps 10
+        smoothing_steps 12
+        first_layer_smoothing_steps 1
+        tgrid_fix_first_layer 0
+        tgrid_n_ortho_layers 0
+        tgrid_gap_factor 0.5
+        tgrid_enhance_norm_comp 0
+        tgrid_enhance_offset_comp 0
+        TgridSmoothingLevelList {Low Medium High}
+        tgrid_smoothing_level Medium
+        __meshPrismPrTGridImprovePrismQuality_Last_Index 0
+        tgrid_max_cap_skew 0.98
+        tgrid_max_cell_skew 0.90
+        tgrid_last_layer_aspect {}
+        DefineperiodicGGVal 1
+        periodicTypeEGVal 0
+        periodicTypeRotMVal 0
+        base {0 0 0}
+        axis {0 0 1}
+        angle 20
+        num_sectors {}
+        VecList {}
+    }
     array set meshPrismDEZ_data {
         this meshPrismDEZ
         type DEZ
@@ -281,6 +429,48 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         smoothing_steps 12
         first_layer_smoothing_steps 1
         loadmesh 0
+    }
+    array set editBlockMenuDEZ_data {
+        this editBlockMenuDEZ
+        type DEZ
+        editBlkmainVal 3
+        joinBlockGGVal 0
+        joinBlocks {}
+        refDirEdge {}
+        joinBlockFaceFaceVal 0
+        joinFaceCorners {}
+        joinFaceBlocks {}
+        modOgridEGVal 0
+        rescaleOBlkSelVal 0
+        rescaleBlks {}
+        OEdge {}
+        absolute 0
+        distance {}
+        resetOgridEdge {}
+        periodicBlkMVal 0
+        perVerts {}
+        convBlockTypeVal 2
+        convBlocks {}
+        swept_face {}
+        merge_parallel 0
+        mapped_face {}
+        freeBlockFaceFreeTypeMappedMethodVal 0
+        vertsFree {}
+        vertsSide {}
+        sblock {}
+        sheet {}
+        ublock {}
+        meshTypeList {"Tetra-Delaunay" "Tetra-Adv.Front" "Hexa-Core" "Hexa-Dominant" "TGrid"}
+        mesh_type {}
+        __setUBlockMtype_Last_Index 0
+        sbmeshTypeList {{Tri (STL like)} {All Tri} {All Quad} {Quad Dominant} {Quad w/one Tri}}
+        sbmesh_type {Quad w/one Tri}
+        __setSBlockMtype_Last_Index 0
+        sblock_faces {}
+        editBlockIJKHowVal 0
+        blocks {}
+        vert {}
+        transferBlocks {}
     }
     array set editProjDEZ_data {
         this editProjDEZ

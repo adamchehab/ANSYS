@@ -23,7 +23,7 @@
 // written by ICEM CFD - version 21.2 on Tue Dec 14 16:54:07 2021
 // written by ICEM CFD - version 21.2 on Tue Dec 14 18:39:30 2021
 // written by ICEM CFD - version 21.2 on Wed Dec 15 16:16:26 2021
-// written by ICEM CFD - version 21.2 on Wed Dec 15 16:36:24 2021
+// written by ICEM CFD - version 21.2 on Wed Dec 15 16:44:00 2021
 
 set_triangulation_tolerance 0.001
 define_family POINTS maxsize 200 width 0 height 0 ratio 0 color 14234528
@@ -1080,7 +1080,7 @@ bspline
 affix 0
 material_point 20.166599 -1.519387 7.500000 name material_point.1 family LIVE
 define_solid body n_lumps 0 n_sheets 0 matlpoint material_point.1 name LIVE.0 family LIVE
-periodic 0 0 0 0 0 1  20.016000747681 0 0 0
+periodic 0 0 0 0 0 1  20 0 0 0
 define_model 409600 reference_size 200
 define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
 return
