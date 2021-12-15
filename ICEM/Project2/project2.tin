@@ -24,6 +24,7 @@
 // written by ICEM CFD - version 21.2 on Tue Dec 14 18:39:30 2021
 // written by ICEM CFD - version 21.2 on Wed Dec 15 16:16:26 2021
 // written by ICEM CFD - version 21.2 on Wed Dec 15 16:48:48 2021
+// written by ICEM CFD - version 21.2 on Wed Dec 15 17:00:43 2021
 
 set_triangulation_tolerance 0.001
 define_family POINTS maxsize 200 width 0 height 0 ratio 0 color 14234528
@@ -482,7 +483,7 @@ bspline
 15.4665995,0.199999988,6
 15.2665997,0.400000036,6
 15.0665989,0.600000024,6
-define_surface height 0.40000001 min 0.5 height_ratio 1.2 name PLATE2/0 family PLATE2 tetra_size 80
+define_surface height 0.40000001 min 0.5 size_ratio 1.2 height_ratio 1.2 name PLATE2/0 family PLATE2 tetra_size 80
 trim_surface n_loops 1
 loop n_curves 5
 coedge
@@ -527,7 +528,7 @@ bspline
 16.2665997,-0.600000024,7
 16.2665997,-0.600000024,8
 16.2665997,-0.600000024,9
-define_surface height 0.40000001 min 0.5 height_ratio 1.2 name PLATE1/1 family PLATE1 tetra_size 80
+define_surface height 0.40000001 min 0.5 size_ratio 1.2 height_ratio 1.2 name PLATE1/1 family PLATE1 tetra_size 80
 trim_surface n_loops 1
 loop n_curves 5
 coedge 3dcurve   CURVES.43
@@ -572,7 +573,7 @@ bspline
 15.4665995,-0.200000018,9
 15.8665991,0.200000018,9
 16.2665997,0.600000024,9
-define_surface height 0.40000001 min 0.5 height_ratio 1.2 name PERIODIC1/2 family PERIODIC1 tetra_size 80
+define_surface height 0.40000001 min 0.5 size_ratio 1.2 height_ratio 1.2 name PERIODIC1/2 family PERIODIC1 tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge 3dcurve   CURVES.25
@@ -613,7 +614,7 @@ bspline
 16.9999313,3,10
 19.8332653,3.5,10
 22.6665993,4,10
-define_surface height 0.40000001 min 0.5 height_ratio 1.2 name PERIODIC2/4 family PERIODIC2 tetra_size 80
+define_surface height 0.40000001 min 0.5 size_ratio 1.2 height_ratio 1.2 name PERIODIC2/4 family PERIODIC2 tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge 3dcurve   CURVES.22
@@ -654,7 +655,7 @@ bspline
 16.9999313,-3,10
 19.8332653,-3.5,10
 22.6665993,-4,10
-define_surface height 0.40000001 min 0.5 height_ratio 1.2 name SHELL/10 family SHELL tetra_size 80
+define_surface height 0.40000001 min 0.5 size_ratio 1.2 height_ratio 1.2 name SHELL/10 family SHELL tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge
@@ -695,7 +696,7 @@ bspline
 16.2665997,0.600000024,7
 16.2665997,0.600000024,8
 16.2665997,0.600000024,9
-define_surface height 0.40000001 min 0.5 height_ratio 1.2 name SHELL/11 family SHELL tetra_size 80
+define_surface height 0.40000001 min 0.5 size_ratio 1.2 height_ratio 1.2 name SHELL/11 family SHELL tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge
@@ -736,7 +737,7 @@ bspline
 16.2665997,-0.600000024,8
 16.2665997,-0.600000024,7
 16.2665997,-0.600000024,6
-define_surface height 0.40000001 min 0.5 height_ratio 1.2 name SHELL/12 family SHELL tetra_size 80
+define_surface height 0.40000001 min 0.5 size_ratio 1.2 height_ratio 1.2 name SHELL/12 family SHELL tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge
@@ -777,7 +778,7 @@ bspline
 16.2665997,-0.600000024,7
 16.2665997,-0.600000024,8
 16.2665997,-0.600000024,9
-define_surface height 0.40000001 min 0.5 height_ratio 1.2 name SHELL/21 family SHELL tetra_size 80
+define_surface height 0.40000001 min 0.5 size_ratio 1.2 height_ratio 1.2 name SHELL/21 family SHELL tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge 3dcurve   CURVES.7
@@ -809,7 +810,7 @@ bspline
 15.0665989,-0.600000024,7
 15.0665989,-0.600000024,8
 15.0665989,-0.600000024,9
-define_surface height 0.40000001 height_ratio 1.2 name HUB/10 family HUB tetra_size 80
+define_surface height 0.40000001 size_ratio 1.2 height_ratio 1.2 name HUB/10 family HUB tetra_size 80
 bspline
 7,2,4,2,0
 0,0,0,0,2.51275802
@@ -830,7 +831,7 @@ bspline
 14.3855362,0.837588966,5
 14.3121986,1.67516303,5
 14.1665993,2.5,5
-define_surface height 0.40000001 height_ratio 1.2 name SHROUD/2 family SHROUD tetra_size 80
+define_surface height 0.40000001 size_ratio 1.2 height_ratio 1.2 name SHROUD/2 family SHROUD tetra_size 80
 bspline
 7,2,4,2,0
 0,0,0,0,4.02041292
@@ -851,7 +852,7 @@ bspline
 23.0168991,1.34014237,5
 22.899559,2.6802609,5
 22.6665993,4,5
-define_surface height 0.40000001 height_ratio 1.2 name TOP/7 family TOP tetra_size 80
+define_surface height 0.40000001 size_ratio 1.2 height_ratio 1.2 name TOP/7 family TOP tetra_size 80
 bspline
 7,2,4,2,0
 0,0,0,0,3.26658559
@@ -872,7 +873,7 @@ bspline
 14.3855362,-0.837588966,10
 14.3121986,-1.67516303,10
 14.1665993,-2.5,10
-define_surface height 0.40000001 height_ratio 1.2 name BOTTOM/8 family BOTTOM tetra_size 80
+define_surface height 0.40000001 size_ratio 1.2 height_ratio 1.2 name BOTTOM/8 family BOTTOM tetra_size 80
 bspline
 7,2,4,2,0
 0,0,0,0,3.26658559
@@ -893,7 +894,7 @@ bspline
 14.3855362,-0.837588966,5
 14.3121986,-1.67516303,5
 14.1665993,-2.5,5
-define_surface height 0.40000001 height_ratio 1.2 name HUB.0 family HUB tetra_size 80
+define_surface height 0.40000001 size_ratio 1.2 height_ratio 1.2 name HUB.0 family HUB tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge
@@ -944,7 +945,7 @@ bspline
 14.4665985,0.120000005,9
 14.7665997,0.120000005,9
 15.0665989,0.120000005,9
-define_surface height 0.40000001 height_ratio 1.2 name HUB.1 family HUB tetra_size 80
+define_surface height 0.40000001 size_ratio 1.2 height_ratio 1.2 name HUB.1 family HUB tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge
@@ -995,7 +996,7 @@ bspline
 14.4665985,0.120000005,6
 14.7665997,0.120000005,6
 15.0665989,0.120000005,6
-define_surface height 0.40000001 height_ratio 1.2 name HUB/9 family HUB tetra_size 80
+define_surface height 0.40000001 size_ratio 1.2 height_ratio 1.2 name HUB/9 family HUB tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge
@@ -1036,7 +1037,7 @@ bspline
 15.0665989,-0.120000005,8
 15.0665989,-0.120000005,7
 15.0665989,-0.120000005,6
-define_surface height 0.40000001 height_ratio 1.2 name HUB/8 family HUB tetra_size 80
+define_surface height 0.40000001 size_ratio 1.2 height_ratio 1.2 name HUB/8 family HUB tetra_size 80
 trim_surface n_loops 1
 loop n_curves 4
 coedge
