@@ -1,5 +1,5 @@
 # ICEM CFD Project Settings
-# Saved by adamc on PC16 on Wed Jan 12 2:50:10 RTZ 2 (зима) 2022
+# Saved by adamc on PC16 on Wed Jan 12 2:56:38 RTZ 2 (зима) 2022
 # ICEM CFD - version 21.2 - Release date: May 17 2021
 
 array set file_name {
@@ -236,7 +236,7 @@ array set vid_options {
     DelBlkPerFlag 0
 }
 set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 0 geomCurveNode 2 geomSurfNode 2 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 0 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-CYL 2 part-ELBOW_1_1 2 part-FLUID 2 part-INLET 2 part-OUTLET 2 part-SOLID 2 part-VORFN 0}
-set last_view {rot {-0.160924995718 0.348831550821 0.0971667119826 0.918138510796} scale {9.34657716535 9.34657716535 9.34657716535} center {39.404198586900002 39.404370307900003 -9.5367431640600002e-07} pos {-53.0163730477 208.204058123 0}}
+set last_view {rot {-0.0210645526696 0.217658241734 0.179059185509 0.959228326573} scale {28.1809723725 28.1809723725 28.1809723725} center {40 39.823223307699998 -1.90734863281e-06} pos {-425.514064717 -469.838446458 0}}
 array set cut_info {
     active 0
 }
@@ -360,7 +360,7 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
     array set editProjDEZ_data {
         this editProjDEZ
         type DEZ
-        editAssocEGVal 1
+        editAssocEGVal 7
         assocVertEGVal 1
         verts {}
         part_name {}
@@ -404,7 +404,7 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
     array set moveBVertexDEZ_data {
         this moveBVertexDEZ
         type DEZ
-        moveBVertexmainVal 0
+        moveBVertexmainVal 2
         MoveVertexOptions {Single Multiple}
         MVHow Single
         __MVtype_Last_Index 0
@@ -420,25 +420,25 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         SLHow {Set Position}
         __SLtype_Last_Index 0
         refLocTypeVal 0
-        ref_vertex {}
+        ref_vertex {{  105  }}
         ref_point {}
         SetLocCsysVal 0
         SetLocBVertexXVal 0
-        X {}
-        SetLocBVertexYVal 0
-        Y {}
+        X 46.0228249
+        SetLocBVertexYVal 1
+        Y 24.2277358
         SetLocBVertexZVal 0
-        Z {}
+        Z 3.02076677
         SetLocBVertexNVal 0
         Normal {}
         SetLocCylRVal 0
         SetLocCylTVal 0
         SetLocCylZVal 0
-        vertices {}
-        edge {}
-        vertex {}
+        vertices {{  104  } {  114  } {  115  }}
+        edge {102 104 -1}
+        vertex 102
         AlignVertCsysVal 0
-        AlignVertexGGVal 0
+        AlignVertexGGVal 1
         AlignVertexPlaneMethod 1
         Plane {}
         AlignVertCylParVal 0
@@ -455,6 +455,41 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         center {}
         angle {}
         moveVertsGGVal 0
+    }
+    array set transformBlocksToolsDEZ_data {
+        this transformBlocksToolsDEZ
+        type DEZ
+        transfrmBlocksEGVal 0
+        BlkList {}
+        copyGGVal1 0
+        ncopies 1
+        also_whole_geom 0
+        moveBlocksEGVal 0
+        x 0
+        y 0
+        z 0
+        pointList2 {}
+        copyGGVal2 0
+        blkRotateAxisOptionEGVal 0
+        axisList {}
+        rot_angle 90
+        RotateBlkCenterEGVal 0
+        center_point {}
+        copyGGVal3 0
+        BlocksMirrorAxisOptionEGVal 0
+        normPointList {}
+        ReflectBlocksCenterEGVal 0
+        copyGGVal4 0
+        xF 1
+        yF 1
+        zF 1
+        ScaleBlocksCenterEGVal 0
+        inc_parts {}
+        copyGGVal5 0
+        transBlocksEGVal 0
+        rotateBlocksList {}
+        fromLCS {}
+        toLCS {}
     }
     array set deleteBlockDEZ_data {
         this deleteBlockDEZ

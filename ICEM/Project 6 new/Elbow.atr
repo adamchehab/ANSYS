@@ -1,4 +1,4 @@
-# Written by ICEM CFD 21.2, user adamc, Wed Jan 12 2:50:10 RTZ 2 (зима) 2022
+# Written by ICEM CFD 21.2, user adamc, Wed Jan 12 2:56:38 RTZ 2 (зима) 2022
 
 begin family CYL
     begin solver "Ansys Fluent"
