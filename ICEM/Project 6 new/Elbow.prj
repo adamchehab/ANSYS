@@ -1,5 +1,5 @@
 # ICEM CFD Project Settings
-# Saved by adamc on PC16 on Wed Jan 12 2:41:41 RTZ 2 (зима) 2022
+# Saved by adamc on PC16 on Wed Jan 12 2:50:10 RTZ 2 (зима) 2022
 # ICEM CFD - version 21.2 - Release date: May 17 2021
 
 array set file_name {
@@ -48,7 +48,7 @@ array set options {
     keep_existing_file_names 0
     record_journal 0
     edit_wait 0
-    face_mode 0
+    face_mode 1
     select_mode all
     med_save_emergency_tetin 1
     user_name adamc
@@ -235,8 +235,8 @@ array set vid_options {
     vid_mode 0
     DelBlkPerFlag 0
 }
-set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 0 geomCurveNode 2 geomSurfNode 2 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 0 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 1 part-CYL 0 part-ELBOW_1_1 2 part-FLUID 2 part-INLET 2 part-OUTLET 2 part-SOLID 2 part-VORFN 0}
-set last_view {rot {-0.35355338585704371 0.35355338585604368 0.1464466046700181 0.85355339532999996} scale {5.96416303505 5.96416303505 5.96416303505} center {39.404198586900002 39.404370307900003 -9.5367431640600002e-07} pos {34.0 -24.0 0}}
+set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 0 geomCurveNode 2 geomSurfNode 2 geomBodyNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 0 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-CYL 2 part-ELBOW_1_1 2 part-FLUID 2 part-INLET 2 part-OUTLET 2 part-SOLID 2 part-VORFN 0}
+set last_view {rot {-0.160924995718 0.348831550821 0.0971667119826 0.918138510796} scale {9.34657716535 9.34657716535 9.34657716535} center {39.404198586900002 39.404370307900003 -9.5367431640600002e-07} pos {-53.0163730477 208.204058123 0}}
 array set cut_info {
     active 0
 }
@@ -309,7 +309,7 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
     array set splitBlkDEZ_data {
         this splitBlkDEZ
         type DEZ
-        splitBlkVal 0
+        splitBlkVal 1
         splitBlkBlkSelVal 0
         markedBlock {}
         splitBlkEdge {}
@@ -323,6 +323,9 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         splitDist {}
         splitCurve {}
         splitCurvePar {}
+        Faces {}
+        Edges {}
+        Vertices {}
         around 0
         offset 1
         absolute 0
@@ -357,7 +360,7 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
     array set editProjDEZ_data {
         this editProjDEZ
         type DEZ
-        editAssocEGVal 7
+        editAssocEGVal 1
         assocVertEGVal 1
         verts {}
         part_name {}
