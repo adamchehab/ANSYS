@@ -1,0 +1,10 @@
+# family_boco file written by ICEM CFD by adamc on Wed Jan 12 2:41:41 RTZ 2 (зима) 2022
+## solver Ansys Fluent
+"CYL"
+"INLET"
+"OUTLET"
+"ELBOW_1_1"
+"FLUID"
+"FLUID" "color" 12109107
+"SOLID"
+"SOLID" "color" 3403389
