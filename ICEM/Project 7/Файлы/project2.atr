@@ -1,0 +1,73 @@
+# Written by ICEM CFD 21.2, user adamc, Wed Jan 12 11:43:05 RTZ 2 (зима) 2022
+
+begin family POINTS
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family POINTS
+
+begin family CURVES
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family CURVES
+
+begin family HUB
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family HUB
+
+begin family PLATE1
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family PLATE1
+
+begin family PLATE2
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family PLATE2
+
+begin family SHELL
+    begin solver "Ansys Fluent"
+        begin bctype WALL
+            active 1
+            arg1 0 1
+        end bctype WALL
+    end solver "Ansys Fluent"
+end family SHELL
+
+begin family LIVE
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family LIVE
+
+begin family TOP
+    begin solver "Ansys Fluent"
+        begin bctype PRESI
+            active 1
+            arg1 0 1
+        end bctype PRESI
+    end solver "Ansys Fluent"
+end family TOP
+
+begin family BOTTOM
+    begin solver "Ansys Fluent"
+        begin bctype PRESO
+            active 1
+            arg1 0 1
+        end bctype PRESO
+    end solver "Ansys Fluent"
+end family BOTTOM
+
+begin family PERIODIC1
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family PERIODIC1
+
+begin family PERIODIC2
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family PERIODIC2
+
+begin family SHROUD
+    begin solver "Ansys Fluent"
+    end solver "Ansys Fluent"
+end family SHROUD
