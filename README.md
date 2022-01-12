@@ -3,5 +3,5 @@
 
 ICEM
 - prj 6
-Remove SOLID visibility before building mesh.
+-  Remove SOLID visibility before building mesh.
 FLUENT
